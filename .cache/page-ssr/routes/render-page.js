@@ -4906,24 +4906,24 @@ if (false) {} else {
 /***/ }),
 
 /***/ "react-dom/server":
-/*!************************************************************************************************!*\
-  !*** external "E:\\Coding\\Web\\Gatsby\\hsf-project-list\\node_modules\\react-dom\\server.js" ***!
-  \************************************************************************************************/
+/*!***********************************************************************************************!*\
+  !*** external "E:\\Coding\\Web\\Gatsby\\Training-Center\\node_modules\\react-dom\\server.js" ***!
+  \***********************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("E:\\Coding\\Web\\Gatsby\\hsf-project-list\\node_modules\\react-dom\\server.js");
+module.exports = require("E:\\Coding\\Web\\Gatsby\\Training-Center\\node_modules\\react-dom\\server.js");
 
 /***/ }),
 
 /***/ "react":
-/*!*******************************************************************************************!*\
-  !*** external "E:\\Coding\\Web\\Gatsby\\hsf-project-list\\node_modules\\react\\index.js" ***!
-  \*******************************************************************************************/
+/*!******************************************************************************************!*\
+  !*** external "E:\\Coding\\Web\\Gatsby\\Training-Center\\node_modules\\react\\index.js" ***!
+  \******************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("E:\\Coding\\Web\\Gatsby\\hsf-project-list\\node_modules\\react\\index.js");
+module.exports = require("E:\\Coding\\Web\\Gatsby\\Training-Center\\node_modules\\react\\index.js");
 
 /***/ }),
 

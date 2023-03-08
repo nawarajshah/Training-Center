@@ -20,12 +20,12 @@ export default function Index() {
       return sportList.filter((item) => item.status === selectedCategory);
     }
     else if(!selectedCategory && videoAvaliable) {
-      return sportList.filter((item) => item.videos != "");
+      return sportList.filter((item) => item.videos !== "");
     }
     else {
       return sportList
             .filter((item) => item.status === selectedCategory)
-            .filter((item) => item.videos != "");
+            .filter((item) => item.videos !== "");
     }
   }
 
@@ -47,7 +47,7 @@ export default function Index() {
             <h2>Filter</h2>
 
             <label>Status:
-  `           <select  
+              <select  
               name="category-list"
               id="category-list"
               onChange={handleCategoryChange}
@@ -56,7 +56,7 @@ export default function Index() {
               <option value="stable">stable</option>
               <option value="beta">beta</option>
               <option value="alpha">alpha</option>
-              </select>`
+              </select>
             </label>
           </div>
           <div className="filterByVideo">

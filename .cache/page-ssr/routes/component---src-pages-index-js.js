@@ -25,7 +25,7 @@ function ProjectCard({
   status
 }) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: `student ${status == "beta" ? "beta" : ""} ${status == "alpha" ? "alpha" : ""}`
+    className: `student ${status === "beta" ? "beta" : ""} ${status === "alpha" ? "alpha" : ""}`
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     class: "title"
   }, name), description === '' ? '' : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, description), repository === '' ? '' : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
@@ -88,9 +88,9 @@ function Index() {
     } else if (selectedCategory && !videoAvaliable) {
       return sportList.filter(item => item.status === selectedCategory);
     } else if (!selectedCategory && videoAvaliable) {
-      return sportList.filter(item => item.videos != "");
+      return sportList.filter(item => item.videos !== "");
     } else {
-      return sportList.filter(item => item.status === selectedCategory).filter(item => item.videos != "");
+      return sportList.filter(item => item.status === selectedCategory).filter(item => item.videos !== "");
     }
   }
   var filteredList = (0,react__WEBPACK_IMPORTED_MODULE_0__.useMemo)(getFilteredList, [videoAvaliable, selectedCategory, sportList]);
@@ -108,7 +108,7 @@ function Index() {
     className: "sideBarContent"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "filterByStatus"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, "Filter"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", null, "Status: `           ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("select", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, "Filter"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", null, "Status:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("select", {
     name: "category-list",
     id: "category-list",
     onChange: handleCategoryChange
@@ -120,7 +120,7 @@ function Index() {
     value: "beta"
   }, "beta"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
     value: "alpha"
-  }, "alpha")), "`")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, "alpha")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "filterByVideo"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     type: "checkbox",

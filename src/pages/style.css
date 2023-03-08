@@ -28,20 +28,22 @@ h1 {
 }
 
 .container > div.student {
-    /* background-color: #e0f2f1; */
-    border: 1px solid rgb(221, 221, 221);
     padding: 15px;
     border-radius: 10px;
     margin: 10px 15px 20px 15px;
     flex: 33.33%;
 } 
 
+.stable {
+    border: 2px solid rgb(221, 221, 221);
+}
+
 .beta {
-    background-color: #F1EB9C;
+    border: 2px dotted #ADD8E6;
 }
 
 .alpha {
-    background-color: #ffcccb;
+    border: 2px dotted #ffcccb;
 }
 
 .title {
@@ -67,25 +69,6 @@ a:link {
 a:hover {
     text-decoration: underline;
     color: red;
-}
-
-/* @media only screen and (max-width: 900px) {
-    .container {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .container {
-        grid-template-columns: 1fr;
-    }
-} */
-
-@keyframes bg-color-change {
-    0% {background-color: red;}
-    25% {background-color: blue;}
-    50% {background-color: green;}
-    100% {background-color: yellow;}
 }
 
 @keyframes shadow-change {
