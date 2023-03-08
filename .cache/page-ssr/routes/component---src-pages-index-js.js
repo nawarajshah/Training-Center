@@ -25,7 +25,10 @@ function ProjectCard({
   status
 }) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: `student ${status === "beta" ? "beta" : ""} ${status === "alpha" ? "alpha" : ""}`
+    className: `student 
+                      ${status === "beta" ? "beta" : ""} 
+                      ${status === "alpha" ? "alpha" : ""}
+                      ${status !== "alpha" && status !== "beta" ? "stable" : ""}`
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     class: "title"
   }, name), description === '' ? '' : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, description), repository === '' ? '' : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {

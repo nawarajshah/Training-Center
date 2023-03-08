@@ -4,32 +4,33 @@ import projects from "../content/index.yaml"
 import './style.css'
 
 export default function Index() {
-  const [sportList, setSportList] = useState([]);
+  const [projectList, setProjectList] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState();
   const [videoAvaliable, setVideoAvaliable] = useState();
 
   useEffect(() => {
-    setSportList(projects);
+    setProjectList(projects);
   }, []);
 
+  // to filter out the list by "video avaliable" and status
   function getFilteredList() {
     if (!selectedCategory && !videoAvaliable) {
-      return sportList;
+      return projectList;
     }
     else if(selectedCategory && !videoAvaliable) {
-      return sportList.filter((item) => item.status === selectedCategory);
+      return projectList.filter((item) => item.status === selectedCategory);
     }
     else if(!selectedCategory && videoAvaliable) {
-      return sportList.filter((item) => item.videos !== "");
+      return projectList.filter((item) => item.videos !== "");
     }
     else {
-      return sportList
+      return projectList
             .filter((item) => item.status === selectedCategory)
             .filter((item) => item.videos !== "");
     }
   }
 
-  var filteredList = useMemo(getFilteredList, [videoAvaliable, selectedCategory, sportList]);
+  var filteredList = useMemo(getFilteredList, [videoAvaliable, selectedCategory, projectList]);
 
   function handleCategoryChange(event) {
     setSelectedCategory(event.target.value);
@@ -83,6 +84,3 @@ export default function Index() {
     </div>
   )
 }
-// export default indexPage
-
-
