@@ -6,7 +6,8 @@ export default function ProjectCard({ name, description, repository, webpage, vi
       <div className={`student 
                       ${status === "beta" ? "beta" : ""} 
                       ${status === "alpha" ? "alpha" : ""}
-                      ${(status !== "alpha") && (status !== "beta") ? "stable" : ""}`}>
+                      ${(status !== "alpha") && (status !== "beta") ? "stable" : ""}`
+                      }>
         <ul>
             <li class="title">
               {name}
