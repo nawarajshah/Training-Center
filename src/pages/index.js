@@ -41,8 +41,8 @@ export default function Index() {
   }
 
   return(
-    <div class="wrapper">
-      <div class="sideBar">
+    <div className="wrapper">
+      <div className="sideBar">
         <div className="sideBarContent">
           <div className="filterByStatus">
             <h2>Filter</h2>
@@ -76,7 +76,7 @@ export default function Index() {
         </div>
       </div>
       
-      <div class="container">
+      <div className="container">
         {filteredList.map((project, index) => (
           <ProjectCard {...project} key={`project_item_${index}`} />
         ))}

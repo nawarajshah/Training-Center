@@ -9,7 +9,7 @@ export default function ProjectCard({ name, description, repository, webpage, vi
                       ${(status !== "alpha") && (status !== "beta") ? "stable" : ""}`
                       }>
         <ul>
-            <li class="title">
+            <li className="title">
               {name}
             </li>
             {description==='' ? '' : 
